@@ -1,0 +1,15 @@
+{
+  "name": "Andy x Woody",
+  "slug": "andy-woody",
+  "website": "loadout.gg",
+  "region": "Europe",
+  "country": "Italy",
+  "logo": "andy-woody.png",
+  "description": "Bitaxe x Loadout test 002",
+  "active": true,
+  "social": {
+    "x": "https://x.com/aerdna_c",
+    "instagram": "",
+    "youtube": ""
+  }
+}
