@@ -44,10 +44,20 @@ for (const file of files) {
     continue
   }
 
-  // Logo — missing is a warning (placeholder used), oversized is an error
+  // Logo filename must match slug (e.g. logos/pivotal-mining.png)
+  const logoName = path.parse(data.logo).name
+  if (logoName !== data.slug) {
+    console.error(`❌ ${file} — Logo filename '${logoName}' does not match slug '${data.slug}'`)
+    errors++
+    continue
+  }
+
+  // Logo is required; missing or oversized is an error
   const logoPath = path.resolve(data.logo)
   if (!fs.existsSync(logoPath)) {
-    console.warn(`⚠️  ${file} — Logo not found: ${data.logo} (placeholder will be used)`)
+    console.error(`❌ ${file} — Logo not found: ${data.logo}`)
+    errors++
+    continue
   } else {
     const size = fs.statSync(logoPath).size
     if (size > 204800) {

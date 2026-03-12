@@ -10,11 +10,11 @@ No backroom deals. No paid placements. Just miners vouching for miners.
 
 ## 🛒 For Vendors
 
-Want to sell Bitaxe and be listed on the official site?
+Mining got centralized. Bitaxe helps bring it back to individuals — but only if buyers can trust who they’re buying from.
 
-**→ Read the [Vendor Guide](VENDOR_GUIDE.md) and open a Pull Request.**
+The legitlist is not a pay-to-play directory. It’s a public trust signal: community-reviewed, core-team approved.
 
-The process is simple: you submit your info, the community reviews it, the core team makes the call. Everything happens in public.
+**→ Read the [Vendor Guide](VENDOR_GUIDE.md) and open your PR.**
 
 ---
 

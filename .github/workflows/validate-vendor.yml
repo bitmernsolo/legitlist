@@ -52,12 +52,23 @@ jobs:
               FILE_ERRORS=$((FILE_ERRORS + 1))
             fi
 
-            # 3. Logo file (optional — fallback placeholder is used if missing)
+            # 3. Logo filename must match slug
             logo=$(jq -r '.logo' "$f")
+            logo_filename=$(basename "$logo")
+            logo_stem="${logo_filename%.*}"
+            if [ "$logo_stem" != "$slug" ]; then
+              echo "::error file=$f::Logo filename '$logo_stem' does not match slug '$slug'"
+              ERRORS=$((ERRORS + 1))
+              FILE_ERRORS=$((FILE_ERRORS + 1))
+            fi
+
+            # 4. Logo file must exist
             if [ ! -f "$logo" ]; then
-              echo "::warning file=$f::Logo not found: $logo — placeholder will be used until you add it"
+              echo "::error file=$f::Logo not found: $logo"
+              ERRORS=$((ERRORS + 1))
+              FILE_ERRORS=$((FILE_ERRORS + 1))
             else
-              # 4. Logo must be ≤ 200 KB
+              # 5. Logo must be ≤ 200 KB
               size=$(stat -c%s "$logo" 2>/dev/null || stat -f%z "$logo")
               if [ "$size" -gt 204800 ]; then
                 echo "::error file=$f::Logo exceeds 200 KB (${size} bytes) — please compress it"

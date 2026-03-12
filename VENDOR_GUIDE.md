@@ -25,7 +25,11 @@ New to the community? That's fine — but expect the review to take longer while
 
 ### 1. Fork this repo
 
-Go to **[bitaxeorg/legitlist on GitHub](https://github.com/bitaxeorg/legitlist)** and hit **Fork** at the top right.
+Go to the **[README](README.md)** and click **[Fork this repo](https://github.com/bitaxeorg/legitlist/fork)**.
+
+Quick answers:
+- **Do I need to rename the fork?** No — keep the default name.
+- **Can I duplicate `vendors/_example.json` from GitHub UI?** Not directly. Create a new file and paste the template below.
 
 ### 2. Add your two files
 
@@ -42,7 +46,7 @@ Copy `vendors/_example.json` and fill it in:
   "website": "https://yourshop.com",
   "region": "North America",
   "country": "USA",
-  "logo": "logos/your-shop-name.png",   ← match your slug and actual filename
+  "logo": "logos/your-shop-name.png",
   "description": "Tell miners who you are — what you sell, where you ship, how long you've been at it. Keep it under 280 characters.",
   "active": true,
   "social": {
@@ -64,7 +68,7 @@ Valid regions: `Europe` · `North America` · `South America` · `Asia Pacific` 
 
 Square, **400×400px recommended**. PNG, JPG, or WebP. Max **200 KB**.
 
-No logo yet? Submit your PR anyway — a placeholder will be shown until you add one.
+Logo is required for new listings.
 
 ### 3. Open a pull request
 

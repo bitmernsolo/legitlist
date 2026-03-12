@@ -50,8 +50,8 @@
     },
     "logo": {
       "type": "string",
-      "pattern": "^logos/[a-zA-Z0-9_-]+\\.(png|jpg|webp)$",
-      "description": "Path to logo file relative to repo root (e.g. 'logos/pivotal-mining.png') \u2014 png, jpg, or webp, square 400\u00d7400px recommended"
+      "pattern": "^logos/[a-zA-Z0-9_-]+\\.([Pp][Nn][Gg]|[Jj][Pp][Gg]|[Ww][Ee][Bb][Pp])$",
+      "description": "Path to logo file relative to repo root (e.g. 'logos/pivotal-mining.png') \u2014 PNG/JPG/WebP, square 400\u00d7400px recommended"
     },
     "description": {
       "type": "string",
