@@ -8,10 +8,15 @@ on:
       - "logos/**"
   workflow_dispatch:
 
+concurrency:
+  group: sync-vendors-main
+  cancel-in-progress: false
+
 jobs:
   sync:
     name: Sync to Framer CMS
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
     steps:
