@@ -58,7 +58,7 @@ Now paste this template and replace the example values with your own:
   "name": "Your Shop Name",
   "slug": "your-shop-name",
   "website": "https://yourshop.com",
-  "region": "North America",
+  "region": "Europe",
   "country": "Italy",
   "logo": "logos/your-shop-name.png",
   "description": "Tell miners who you are — what you sell, where you ship, how long you've been at it. Keep it under 280 characters.",
