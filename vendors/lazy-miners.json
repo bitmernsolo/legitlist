@@ -4,12 +4,15 @@
   "website": "https://lazyminers.com",
   "region": "North America",
   "country": "Canada",
-  "logo": "your-shop-name.png",
-  "description": "Tell miners who you are — what you sell, where you ship, how long you've been at it. Keep it under 280 characters.",
+  "logo": "lazy-miners.png",
+  "description": "Canada-based ASIC broker buying, selling, and sourcing new and used miners. We ship worldwide with a focus on North America and have been helping miners find the right hardware since August 2025",
   "active": true,
   "social": {
-    "x": "https://x.com/yourhandle",
-    "instagram": "",
-    "youtube": ""
+    "x": "https://x.com/LazyMiners1",
+    "instagram": "https://www.instagram.com/lazyminers1/",
+    "youtube": "https://www.youtube.com/@lazyminers",
+    "discord": "https://discord.gg/UQ8eu6prhF",
+    "tiktok": "https://www.tiktok.com/@lazy.miners",
+ t
   }
 }
