@@ -7,6 +7,8 @@ Update to existing listing
 Removal / deactivation
 -->
 
+If this is your first PR, keep `Type: New vendor listing`.
+
 ---
 
 ## About your shop
@@ -18,7 +20,9 @@ _Replace the example values below with your real details._
 | **Shop name** | Your shop name |
 | **Website** | https://yourshop.com |
 | **Region** | Europe / North America / South America / Asia Pacific / Middle East / Africa / India |
-| **Where to find you in the community** | Your X, Discord, Instagram, TikTok, Nostr, or other public link (PR context only; JSON `social` supports only `x`, `instagram`, `youtube`, `tiktok`, `nostr`) |
+| **Where to find you in the community** | Your X, Discord, Instagram, TikTok, Nostr, or other public link |
+
+Note: in your vendor JSON `social` section, use only `x`, `instagram`, `youtube`, `tiktok`, `nostr`.
 
 ---
 

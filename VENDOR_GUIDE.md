@@ -6,8 +6,6 @@ Mining got centralized. Bitaxe is one piece of bringing it back to individuals. 
 
 This list isn't a barrier. It's a signal. A vendor on this list has been reviewed by the community and cleared by the maintainers. That means something to miners making a purchase decision.
 
----
-
 ## ✅ Who belongs here
 
 You're a good fit if:
@@ -46,8 +44,8 @@ Before you begin, make sure you have:
 - your website URL
 - your region and country
 - your logo file
-- at least one place where the community can find you (for example X, Discord, Instagram, TikTok, or Nostr)
-  (community contact links can be shared in PR text; JSON `social` keys are only `x`, `instagram`, `youtube`, `tiktok`, `nostr`)
+- at least one place where people can find you (for example X, Discord, Instagram, TikTok, or Nostr)
+  (Discord or other links are fine in PR text; in JSON `social`, use only `x`, `instagram`, `youtube`, `tiktok`, `nostr`)
 
 For your logo:
 - use a square image
@@ -120,9 +118,8 @@ A few notes:
 - leave `active` as `true`
 - `website` must be a full HTTPS URL (starting with `https://`) and cannot be empty
 - do not add a `logo` field in JSON — logo is inferred from `logos/{slug}.png|jpg|webp`
-- social fields may be full HTTPS URLs or empty strings: `""`
-- social fields supported by schema: `x`, `instagram`, `youtube`, `tiktok`, `nostr`
-- only these social keys are allowed in JSON (do not add custom keys like `discord`)
+- social links can be full HTTPS URLs or empty strings: `""`
+- in the `social` section, use only: `x`, `instagram`, `youtube`, `tiktok`, `nostr`
 - for `nostr`, use an HTTPS profile page URL (not a raw `npub...` or `nostr:` identifier)
 
 Valid regions:
@@ -174,13 +171,13 @@ Then click **Create pull request**.
 
 ### 5. What happens next
 
-1. We check that your files are valid
+1. Automatic checks verify your files
 2. The community can review and comment
 3. The maintainers decide whether to merge your listing
 
 If your PR is closed, you can fix the issues and open a new one.
 
-Maintainer/community trust checks are manual. File format and schema checks run automatically in CI.
+Trust checks are manual. File checks are automatic.
 
 ---
 
@@ -193,7 +190,7 @@ If your PR check fails, use this checklist:
   Example: `your-shop-name.json`
 
 - **Slug does not match filename**
-  `slug` must be exactly the filename without `.json`
+  `slug` must be exactly the same as your filename (without `.json`)
   Example: file `pivotal-mining.json` -> `"slug": "pivotal-mining"`
 
 - **Logo filename issue**
