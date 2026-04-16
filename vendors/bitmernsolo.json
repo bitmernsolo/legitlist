@@ -1,14 +1,16 @@
-{  
-  "shop_name": "Bitmern solominers",  
-  "slug": "bitmernsolo",  
-  "website": "https://www.bitmernsolo.com/shop",  
-  "region": "Europe",  
-  "country": "Cyprus",  
-  "description": "Bitmern Solominers is a specialist online store dedicated exclusively to bitcoin mining hardware. From efficient home rigs to professional-grade ASIC machines.",  
-  "active": true,  
-  "social_media": {  
-    "x": "https://x.com/BitmernMining",  
-    "instagram": "https://www.instagram.com/bitmern_mining?igsh=MWNoOHE1b2J0eXJ2Zw==",  
-    "tiktok": "https://www.tiktok.com/@bitmernmining?_r=1&_t=ZN-95GPJQU5TKI"  
-  }  
+{
+  "name": "Bitmern Solominers",
+  "slug": "bitmernsolo",
+  "website": "https://www.bitmernsolo.com/shop",
+  "region": "Europe",
+  "country": "Cyprus",
+  "description": "Bitmern Solominers is a specialist online store dedicated exclusively to bitcoin mining hardware. From efficient home rigs to professional-grade ASIC machines.",
+  "active": true,
+  "social": {
+    "x": "https://x.com/BitmernMining",
+    "instagram": "https://www.instagram.com/bitmern_mining?igsh=MWNoOHE1b2J0eXJ2Zw==",
+    "youtube": "",
+    "tiktok": "https://www.tiktok.com/@bitmernmining?_r=1&_t=ZN-95GPJQU5TKI",
+    "nostr": ""
+  }
 }
